@@ -1,0 +1,261 @@
+/* These rules apply screen sizes bigger than a phone*/
+
+body{ 
+	margin:0;
+	font-family: Avenir Next;
+	color: white;
+	background:#252B30;
+	overflow-x: hidden; 
+}
+
+header{
+	width: 100%;
+	/*height: 10em;*/
+	background: transparent;
+	padding-left: 0;
+
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 400%;
+	padding-left: 10%;
+}
+
+h2 {
+	float:left;
+	display: inline-block;
+	position: relative;
+	font-weight: normal;
+	color:black;
+	font-size: 20%;
+}
+
+/*.background{
+	background: green;
+	width: 100%;
+	height: 100%;
+}*/
+
+
+
+.navbar{
+	margin:auto;
+	width: 100%;
+	height: 5vh;
+	background: transparent;
+	/*padding-left: 10vw;
+	padding-right: 10vw;*/
+	overflow-right: hidden; 
+}
+
+#nb2{
+	margin:auto;
+	width: 80%;
+	height: 5vh;
+	background: transparent;
+	padding-left: 0;
+	padding-right: 0;
+
+}
+
+
+
+.bc{
+
+	height: 5vh;
+	/*
+	float: left;
+	display: inline-block;*/
+	background-color: transparent;
+
+}
+
+.txt{
+
+	height: 2vh;
+	/*
+	float: left;
+	display: inline-block;*/
+	background-color: transparent;
+	font-size: 110%;
+    text-align: center;    
+    font-weight: normal;
+    border: none;
+    color: white;
+    opacity: .75;
+    overflow: hidden;
+
+}
+
+
+.dropdown:hover .txt{
+    height: 5vh;
+    position: relative;
+    top: -1vh;
+    opacity: 1;
+    transition: .1s;
+
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+    overflow-right: hidden; 
+
+}
+
+.dropdown-content{
+	display: none;
+    position:relative;
+    background-color: white;
+    width:500%;
+    height:400%;
+    margin:auto;
+} 
+
+
+.dropdown{
+
+	float: left;
+	position: relative;
+	display: inline-block;
+    background-color: transparent;
+    height: 100%;
+    width:20%;
+
+
+    /*top: -50px;
+    left: 10px;
+    right:10px;*/
+}
+
+#g{
+	position: relative;
+	left: -16vw;
+	height:150vh;
+	/*background-color: red;*/
+}
+
+#i{
+	position: relative;
+	left: -32vw;
+	/*background-color: orange;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------   TAB CCONTENTS   ------*/
+
+
+
+
+/*---- ABOUT ----*/
+
+
+
+
+
+
+
+
+/*---- Graphic ----*/
+
+
+.port{
+
+	width:100%;
+	height: 100%;
+	background-color: blue;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+
+.portsr{
+
+	width:49.5%;
+	height: 100%;
+	background-color: blue;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	margin-right: .5%;
+}
+.portsl{
+
+	width:49.5%;
+	height: 100%;
+	background-color: blue;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	margin-left: .5%;
+}
+
+
+.gcontainer{
+
+	margin:auto;
+	margin-top: 1%;
+	width:98%;
+	height: 35vh;
+	background-color: white;
+	display: block;
+
+
+	cursor: pointer;
+
+}
+
+.gcontainerv{
+
+	margin:auto;
+	margin-top: 1%;
+	width:98%;
+	height: 70vh;
+	background-color: pink;
+	display: block;
+
+
+	cursor: pointer;
+
+}
+
+.tend{
+
+
+	margin-top: 1%;
+	width:100%;
+	height: 8vh;
+	background-color: #252B30;
+	display: block;
+
+
+	cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
