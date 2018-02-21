@@ -1,11 +1,25 @@
 /* These rules apply screen sizes bigger than a phone*/
 
-body{ 
+body { 
 	margin:0;
-	font-family: Avenir Next;
+	height: 100%;
+	font-family: Avenir Next, sans-serif;
 	color: white;
-	background:#252B30;
-	overflow-x: hidden; 
+	background-color:#252B30;
+	overflow-x: visible; 
+}
+
+.bg {
+
+
+	position: fixed;
+    /* The image used */
+    opacity: .6;
+
+    /* Center and scale the image nicely 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 header{
@@ -20,6 +34,7 @@ h1 {
 	font-weight: normal;
 	font-size: 400%;
 	padding-left: 10%;
+	/*text-shadow: .5rem .75rem .7rem #232323;*/
 }
 
 h2 {
@@ -31,13 +46,47 @@ h2 {
 	font-size: 20%;
 }
 
+h3 {
+	/*float:left;*/
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform: translate(-50%, -120%);
+	font-weight: normal;
+	color:black;
+	font-size: 150%;
+	opacity: 1 ;
+	z-index: 2;
+	text-shadow: 0rem 0rem 5rem white;
+
+
+}
+
+
+/*.portsr:hover .abutton{
+	transition: 1s;
+	transform: scale(1.01);
+
+}*/
+
+/*.portsr:hover .simple{
+	transition: 1s;
+	transform: scale(1.025);
+
+}*/
 /*.background{
 	background: green;
 	width: 100%;
 	height: 100%;
 }*/
 
-
+.bi{
+	height:100%;
+	width:100%;
+	z-index: -1;
+	background-color: transparent;
+}
 
 .navbar{
 	margin:auto;
@@ -50,85 +99,73 @@ h2 {
 }
 
 #nb2{
+
 	margin:auto;
 	width: 80%;
-	height: 5vh;
+	height: 100%;
 	background: transparent;
 	padding-left: 0;
 	padding-right: 0;
 
 }
 
+.dropdown{
+	position: relative;
+	display: inline-block;
+	float:left;
+	height: 100%;
+	width:20%;
 
-
-.bc{
-
-	height: 5vh;
 	/*
 	float: left;
 	display: inline-block;*/
 	background-color: transparent;
+	opacity: 1;
 
 }
 
-.txt{
 
-	height: 2vh;
-	/*
+.txt{
+	display: block;
+	position: absolute;
 	float: left;
-	display: inline-block;*/
+	height: 2.25vh;
+	width: 100%;
+
 	background-color: transparent;
 	font-size: 110%;
     text-align: center;    
     font-weight: normal;
-    border: none;
     color: white;
-    opacity: .75;
+    opacity: .7;
     overflow: hidden;
 
 }
 
-
-.dropdown:hover .txt{
-    height: 5vh;
-    position: relative;
-    top: -1vh;
-    opacity: 1;
-    transition: .1s;
-
-}
-
-
 .dropdown:hover .dropdown-content{
-    display: inline-block;
-    overflow-right: hidden; 
+    display: inline-block; 
 
 }
 
 .dropdown-content{
 	display: none;
-    position:relative;
+    position: absolute;
+    top:5vh;
     background-color: white;
     width:500%;
     height:400%;
-    margin:auto;
+    z-index: 1;
 } 
 
+.dropdown:hover .txt{
+	transform: translateY(-10%);
+    height: 5vh;
+    opacity: 1;
+    /*text-shadow: .125rem .25rem .05rem #232323;*/
+    transition: .2s;
 
-.dropdown{
-
-	float: left;
-	position: relative;
-	display: inline-block;
-    background-color: transparent;
-    height: 100%;
-    width:20%;
-
-
-    /*top: -50px;
-    left: 10px;
-    right:10px;*/
 }
+
 
 #g{
 	position: relative;
@@ -140,16 +177,25 @@ h2 {
 #i{
 	position: relative;
 	left: -32vw;
+	height:150vh;
 	/*background-color: orange;*/
 }
 
 
+/*.bc{
+	position: relative;
+	height: 5vh;
+	width:20%;
+	display:inline-block;
+	left:0%;
+	float: left;
+	
+	float: left;
+	display: inline-block;
+	background-color: blue;
+	opacity: .8;
 
-
-
-
-
-
+}*/
 
 
 
@@ -177,31 +223,40 @@ h2 {
 
 	width:100%;
 	height: 100%;
-	background-color: blue;
+	background-color: #252B30;
 	display: inline-block;
 	float: left;
 	cursor: pointer;
+	opacity: .8;
+
+
+
 }
 
 .portsr{
 
 	width:49.5%;
 	height: 100%;
-	background-color: blue;
+	background-color: #252B30;
 	display: inline-block;
 	float: left;
 	cursor: pointer;
 	margin-right: .5%;
+	text-align: center;
+	opacity: .8;
+	overflow: hidden;
 }
 .portsl{
 
 	width:49.5%;
 	height: 100%;
-	background-color: blue;
+	background-color: #252B30;
 	display: inline-block;
 	float: left;
 	cursor: pointer;
 	margin-left: .5%;
+	text-align: center;
+	opacity: .8;
 }
 
 
@@ -211,10 +266,8 @@ h2 {
 	margin-top: 1%;
 	width:98%;
 	height: 35vh;
-	background-color: white;
+	background-color: transparent;
 	display: block;
-
-
 	cursor: pointer;
 
 }
@@ -225,32 +278,110 @@ h2 {
 	margin-top: 1%;
 	width:98%;
 	height: 70vh;
-	background-color: pink;
+	background-color: white;
 	display: block;
-
-
 	cursor: pointer;
 
 }
 
 .tend{
 
-
 	margin-top: 1%;
 	width:100%;
 	height: 8vh;
 	background-color: #252B30;
 	display: block;
-
-
 	cursor: pointer;
 
 }
 
 
+.ptxt{
+	width: 50%;
+	height: 20%;
+	position: absolute;
+	top: 0%;
+    left: 0%;
+    translate: (0%,2rem); 
+    color:black;
+}
+
+.porttextbuff{
+	width: 100%;
+	height: 45%;
+	background-color: yellow;
+}
+
+/*#imcent a img{
+	display: block;
+	float: left;
+    margin: auto;
+    overflow:visible;
+}*/
+
+#kc{
+	opacity: 1;
+	background-color: #718F5B;
+}
+.simple{
+	display: block;
+	position: absolute;
+	/*transform:translateX(10%)
+	transform:translateY(10%);*/
+	left: 0%;
+    top: 0%;
+    margin:1%;
+	background-color: white;
+
+	opacity: 0;
+	width: 48.5%;
+	height: 1vh;
+	z-index:1;
+}
+
+img {
+	margin-top:  0%;
+	height:100%;
+	left: 0%;
+    top: 0%;
+    z-index: -1;
+}
 
 
 
+#simple2{
+	background-color: transparent;
+	opacity: 0; 
+}
+
+
+a:hover .simple{
+	opacity: .2;
+	transition: .75s;
+	display: block;
+	width: 48.5%;
+	height: 35vh;
+}
+a:hover #simple2{
+	opacity: 1;
+}
+
+/*a:hover img{
+	transition: 1s;
+	transform: scale(1.1);
+}*/
+
+.abutton{
+	width:100%;
+	height: 100%;
+	
+}
+
+.portsr:hover img{
+	transition: .75s;
+	transform: scale(1.1);
+
+}
 
 
 
