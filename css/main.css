@@ -371,6 +371,7 @@ h4 {
 
 img {
 	transition: .4s;
+	image-rendering: crisp-edges
 	-webkit-transform: scale(1.1,1.1);
 	transform: scale(1.1,1.1);
 	height: 100%;
