@@ -6,7 +6,7 @@ body {
 	font-family: Avenir Next, sans-serif;
 	color: white;
 	background-color:#252B30;
-	overflow-x: visible; 
+	overflow-x: hidden; 
 }
 
 .bg {
@@ -22,11 +22,13 @@ body {
     background-size: cover;*/
 }
 
+
 header{
 	width: 100%;
 	/*height: 10em;*/
 	background: transparent;
 	padding-left: 0;
+	opacity: 1;
 
 }
 
@@ -62,13 +64,28 @@ h3 {
 
 
 }
+h4 {
+	float:left;
+	display: inline-block;
+	position: relative;
+	font-weight: normal;
+	color:black;
+	font-size: 100%;
+}
+.headeropacity{
+	opacity: 1;
+}
 
 
-/*.portsr:hover .abutton{
-	transition: 1s;
-	transform: scale(1.01);
+.abutton{
+	display:block;
+	width: 100%;
+	height: 35vh;
+	background-color:transparent;
+	z-index: -1;
+	overflow: visible;
 
-}*/
+}
 
 /*.portsr:hover .simple{
 	transition: 1s;
@@ -81,17 +98,17 @@ h3 {
 	height: 100%;
 }*/
 
-.bi{
+/*.bi{
 	height:100%;
 	width:100%;
 	z-index: -1;
-	background-color: transparent;
-}
+	background-color: green;
+}*/
 
 .navbar{
 	margin:auto;
 	width: 100%;
-	height: 5vh;
+	height: 4vh;
 	background: transparent;
 	/*padding-left: 10vw;
 	padding-right: 10vw;*/
@@ -115,13 +132,24 @@ h3 {
 	float:left;
 	height: 100%;
 	width:20%;
+	margin-left: 0%;
+	margin-right: 0%;
 
 	/*
 	float: left;
 	display: inline-block;*/
 	background-color: transparent;
 	opacity: 1;
+	/*padding-right:5%;
+    padding-left: 5%;*/
 
+}
+
+#ab{
+	margin-right:-1.25%;
+}
+#in{
+	margin-left:1.25%;
 }
 
 
@@ -131,14 +159,17 @@ h3 {
 	float: left;
 	height: 2.25vh;
 	width: 100%;
-
+	/*margin:10%;*/
 	background-color: transparent;
-	font-size: 110%;
+	font-size: 120%;
     text-align: center;    
     font-weight: normal;
     color: white;
-    opacity: .7;
+    opacity: 0.7;
     overflow: hidden;
+    /*padding-right:5%;
+    padding-left: 5%;*/
+
 
 }
 
@@ -146,38 +177,51 @@ h3 {
     display: inline-block; 
 
 }
+.dropdown:hover .headeropacity{
+    opacity: .5;
+    font-color: white; 
+
+}
 
 .dropdown-content{
 	display: none;
     position: absolute;
-    top:5vh;
+    top:4vh;
     background-color: white;
+    opacity: 0.9;
     width:500%;
     height:400%;
     z-index: 1;
+    box-shadow: 0rem 1rem 3.5rem .0625rem black;
 } 
 
 .dropdown:hover .txt{
-	transform: translateY(-10%);
-    height: 5vh;
-    opacity: 1;
-    /*text-shadow: .125rem .25rem .05rem #232323;*/
+	transform: translateY(-30%);
+    height: 4.75vh;
+    opacity: 0.95;
+    text-shadow: .05rem .125rem .3rem black, 
+    			.05rem .5rem .5rem black, .05rem .5rem .75rem black;
     transition: .2s;
+    font-size: 120%;
 
 }
 
-
+#a{
+	padding: 20%;
+}
 #g{
 	position: relative;
-	left: -16vw;
-	height:150vh;
+	left: -15vw;
+	height:106.5vh;
+	padding-bottom: .5%;
 	/*background-color: red;*/
 }
 
 #i{
 	position: relative;
 	left: -32vw;
-	height:150vh;
+	height:106.5vh;
+	padding-bottom: .5%;
 	/*background-color: orange;*/
 }
 
@@ -196,6 +240,39 @@ h3 {
 	opacity: .8;
 
 }*/
+
+
+
+
+/* -------- ABOUT ---------*/ 
+
+.bio{
+	background-color: transparent;
+	height:100%;
+	width: 100%;
+	font-weight: normal;
+	font-size: 150%;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -220,104 +297,43 @@ h3 {
 
 
 .port{
-
-	width:100%;
+	position: relative;
+	width:49.25%;
 	height: 100%;
+	margin-left: 0.5%;
 	background-color: #252B30;
 	display: inline-block;
 	float: left;
 	cursor: pointer;
-	opacity: .8;
-
-
-
-}
-
-.portsr{
-
-	width:49.5%;
-	height: 100%;
-	background-color: #252B30;
-	display: inline-block;
-	float: left;
-	cursor: pointer;
-	margin-right: .5%;
+	opacity: 1;
 	text-align: center;
-	opacity: .8;
 	overflow: hidden;
-}
-.portsl{
 
-	width:49.5%;
-	height: 100%;
-	background-color: #252B30;
-	display: inline-block;
-	float: left;
-	cursor: pointer;
-	margin-left: .5%;
-	text-align: center;
-	opacity: .8;
 }
+
+/*.port.pl{
+	margin-left: 0.5%;
+}*/
 
 
 .gcontainer{
+	position: relative;
 
-	margin:auto;
-	margin-top: 1%;
-	width:98%;
+	display:inline-block;
+	float: left;
+    margin-top: 0.5%;
+	/*margin-left: 0.5%;
+	margin-right: 0.5%;*/
+	width: 100%;
 	height: 35vh;
 	background-color: transparent;
-	display: block;
 	cursor: pointer;
-
-}
-
-.gcontainerv{
-
-	margin:auto;
-	margin-top: 1%;
-	width:98%;
-	height: 70vh;
-	background-color: white;
-	display: block;
-	cursor: pointer;
-
-}
-
-.tend{
-
-	margin-top: 1%;
-	width:100%;
-	height: 8vh;
-	background-color: #252B30;
-	display: block;
-	cursor: pointer;
+	overflow: visible;
 
 }
 
 
-.ptxt{
-	width: 50%;
-	height: 20%;
-	position: absolute;
-	top: 0%;
-    left: 0%;
-    translate: (0%,2rem); 
-    color:black;
-}
 
-.porttextbuff{
-	width: 100%;
-	height: 45%;
-	background-color: yellow;
-}
-
-/*#imcent a img{
-	display: block;
-	float: left;
-    margin: auto;
-    overflow:visible;
-}*/
 
 #kc{
 	opacity: 1;
@@ -327,23 +343,28 @@ h3 {
 	display: block;
 	position: absolute;
 	/*transform:translateX(10%)
-	transform:translateY(10%);*/
-	left: 0%;
+	transform:translateY(-100%);*/
     top: 0%;
-    margin:1%;
+    margin-top:0%;
 	background-color: white;
-
+	overflow: hidden;
+	transition: .6s;
 	opacity: 0;
-	width: 48.5%;
-	height: 1vh;
+	width: 100%;
+	height: 0vh;
 	z-index:1;
 }
 
+.kch{
+	background-color: transparent;
+	height:0;
+	transition: .4s;
+}
+
 img {
-	margin-top:  0%;
+	transition: .4s;
 	height:100%;
-	left: 0%;
-    top: 0%;
+
     z-index: -1;
 }
 
@@ -351,38 +372,55 @@ img {
 
 #simple2{
 	background-color: transparent;
-	opacity: 0; 
+	opacity: 0;
+	overflow: hidden;
+ 
 }
 
 
-a:hover .simple{
-	opacity: .2;
+.port:hover .simple{
+	opacity: .7;
 	transition: .75s;
-	display: block;
-	width: 48.5%;
-	height: 35vh;
+	height: 35.1vh;
 }
-a:hover #simple2{
-	opacity: 1;
+.port:hover #simple2{
+	opacity: 3;
+}
+.port:hover .kch{
+	transition: .75s;
+	height:4vh;
 }
 
-/*a:hover img{
-	transition: 1s;
+
+.port:hover img{
+	transition: .75s;
 	transform: scale(1.1);
+
+}
+
+#bottom{
+	padding-bottom: 11%;
+}
+/*.tend{
+
+	margin-top: .5%;
+	width:100%;
+	height: 8vh;
+	background-color: #252B30;
+	display: block;
+	cursor: pointer;
+
 }*/
 
-.abutton{
-	width:100%;
-	height: 100%;
-	
-}
 
-.portsr:hover img{
-	transition: .75s;
-	transform: scale(1.1);
 
-}
 
+/*#imcent a img{
+	display: block;
+	float: left;
+    margin: auto;
+    overflow:visible;
+}*/
 
 
 
