@@ -199,6 +199,7 @@ h4 {
 } 
 
 .dropdown:hover .txt{
+	-webkit-transform: translateZ(0);
 	-webkit-transform: translateY(-30%);
 	transform: translateY(-30%);
     height: 120%;
