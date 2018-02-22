@@ -198,8 +198,9 @@ h4 {
 } 
 
 .dropdown:hover .txt{
+	-webkit-transform: translateY(-30%);
 	transform: translateY(-30%);
-    height: 120%;
+    height: 110%;
     opacity: 0.95;
     text-shadow: .05rem .125rem .75rem #1C1D1E, 
     			.03rem .5rem .75rem #1C1D1E, .07rem .5rem .75rem #1C1D1E;
@@ -400,6 +401,7 @@ img {
 
 .port:hover img{
 	transition: .75s;
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 
 }
