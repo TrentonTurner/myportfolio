@@ -207,7 +207,7 @@ h4 {
 }
 
 #a{
-	padding: 20%;
+	
 }
 #g{
 	position: relative;
@@ -247,9 +247,9 @@ h4 {
 /* -------- ABOUT ---------*/ 
 
 .bio{
-	background-color: transparent;
+	background-color: orange;
 	height:100%;
-	width: 100%;
+	width: 20%;
 	font-weight: normal;
 	font-size: 150%;
 	color: black;
