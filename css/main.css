@@ -7,7 +7,7 @@ body {
 	color: white;
 	background-color:#2A3033;
 	overflow-x: hidden; 
-	/* #252B30*/
+	/* #252B30  2A3033*/
 }
 
 .bg {
@@ -140,7 +140,7 @@ h4 {
 	/*
 	float: left;
 	display: inline-block;*/
-	background-color: skyblue;
+	background-color: transparent;
 	opacity: 1;
 	/*padding-right:5%;
     padding-left: 5%;*/
@@ -166,7 +166,7 @@ h4 {
 	font-size: 120%;
     text-align: left;    
     font-weight: normal;
-    color: white;
+    color: #70C6F9;
     opacity: 0.7;
     overflow: hidden;
     /*padding-right:5%;
@@ -189,12 +189,12 @@ h4 {
 	display: none;
     position: absolute;
     top:80%;
-    background-color: white;
+    background-color: transparent;
     opacity: 1;
     width:500%;
     height:300%;
     z-index: 1;
-    box-shadow: 0rem 1rem 3.5rem .0625rem #1C1D1E;
+    /*box-shadow: 0rem 1rem 3.5rem .0625rem #1C1D1E;*/
 } 
 
 .dropdown:hover .txt{
@@ -202,10 +202,11 @@ h4 {
 	transform: translateY(-30%);
     height: 120%;
     opacity: 0.95;
-    text-shadow: .05rem .125rem .75rem #1C1D1E, 
-    			.03rem .5rem .75rem #1C1D1E, .07rem .5rem .75rem #1C1D1E;
+    /*text-shadow: .05rem .125rem .75rem #1C1D1E, 
+    			.03rem .5rem .75rem #1C1D1E, .07rem .5rem .75rem #1C1D1E;*/
     transition: .2s;
     font-size: 120%;
+    color:#70C6F9;
     overflow: visible;
 
 }
@@ -306,7 +307,7 @@ h4 {
 	width:49.25%;
 	height: 100%;
 	margin-left: 0.5%;
-	background-color: #252B30;
+	background-color: #1B1D1E;
 	display: inline-block;
 	float: left;
 	cursor: pointer;
