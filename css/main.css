@@ -8,6 +8,7 @@ body {
 	background-color:#2A3033;
 	overflow-x: hidden; 
 	/* #252B30  2A3033*/
+	transition-timing-function: ease-in-out;
 }
 
 .bg {
@@ -437,7 +438,7 @@ img {
 
 .port:hover img{
 	-webkit-transition: .75s;
-	padding-top: 5%;
+	padding-top: 7.5%;
 	height:80%;
 	/*-webkit-transform: scale(1.2,1.2);
 	transform: scale(1.2,1.2);*/
