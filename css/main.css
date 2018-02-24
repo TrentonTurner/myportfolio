@@ -77,7 +77,13 @@ h4 {
 	color: #70C6F9;
 	font-size: 100%;
 }
-#headeropacity{
+.headeropacity{
+	display: none;
+	position: fixed;
+	width: 80%;
+	height: 10rem;
+	top: 2.5%;
+	background-color: #2A3033;
 	opacity: 1;
 }
 
@@ -144,7 +150,7 @@ h4 {
 }
 
 .dropdown{
-	position: inherit;
+	position: relative;
 	display: inline-block;
 	float:left;
 	height: 140%;
@@ -170,8 +176,8 @@ h4 {
 	display: block;
 	position: fixed;
 	float: left;
-	height: 100%;
-	width: 100%;
+	height: 5%;
+	width: 5%;
 	/*margin:10%;*/
 	background-color: transparent;
 	font-size: 120%;
@@ -179,7 +185,7 @@ h4 {
     font-weight: normal;
     color: #70C6F9;
     opacity: 0.5;
-    overflow: hidden;
+    overflow: visible;
     /*padding-right:5%;
     padding-left: 5%;*/
 
@@ -194,7 +200,8 @@ h4 {
 
 
 }
-.dropdown:hover #headeropacity{
+.dropdown:hover .headeropacity{
+	display:block;
     opacity: .5;
     font-color: white; 
 
@@ -253,6 +260,16 @@ h4 {
 	/*background-color: orange;*/
 }
 
+#hg{
+	left:0rem;
+	margin-left: 10%;
+}
+
+#hi{
+	left:0rem;
+	margin-left: 10%;
+
+}
 
 
 /*.bc{
@@ -435,7 +452,7 @@ img {
 
 
 .port:hover .simple{
-	opacity: 1;
+	opacity: .8;
 	-webkit-transition: .75s;
 
 }
