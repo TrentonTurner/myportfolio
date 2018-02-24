@@ -5,6 +5,55 @@
 	<title>Trenton Turner</title>
 	<link rel="stylesheet" type = "text/css"
      href="css/main.css">
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<!--
+<script type = "text/javascript" >
+				$(window).scroll(function() {
+						if($(".dropdown-content").scrollBottom()<40){
+							$(".headeropacity").css({"opacity" : "1"})
+						})
+						else{
+							$(".headeropacity").css({"opacity" : "1"})
+						})
+						// body...
+				})
+  				
+			</script>-->
+
+			<script>
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+
+			
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("headeropacity" ).className = "hoc";
+		        document.getElementById("at" ).className = "txtwo";
+		        document.getElementById("gt" ).className = "txtwo";
+		        document.getElementById("it" ).className = "txtwo";
+		    } else {
+		        document.getElementById("headeropacity" ).className = "";
+		        document.getElementById("at" ).className = "txt";
+		        document.getElementById("gt" ).className = "txt";
+		        document.getElementById("it" ).className = "txt";
+		    }
+		    
+		   
+		}
+
+		/*$(window).scroll(function(i){
+		    var scrollVar = $(window).scrollTop();
+		    $('section#about .inner').children('h1').css({'top': .7*scrollVar });
+		    $('section#about .inner').children('h1').css({'opacity':( 10-scrollVar )/100});
+		})*/
+		
+		
+</script>
+
+
+
 
 </head>
  
@@ -12,14 +61,14 @@
 
 
 
-<body  >
+<body  id = "idt">
 
 	 
 	
 
 	<!--- TRENTON HEADER -->
-	<header >
-		<h1>
+	<header id = "fade">
+		<h1 id = "headeropacity">
 			Trenton Makes <br>
 			The World Takes
 		</h1>
@@ -29,22 +78,21 @@
 
 	<!-- TABS -->
 
-		<div class ="navbar">
+		<div id ="navbar">
 
 
 		  <!-- Button COntainer-->
-			<div class = "navbar" id="nb2">
+			<div class = "nb2">
 
 			
 			  <!--< About >-->
 				
 				
 				<div class = "dropdown" id ="ab" >
-					<span class = "txt">
+					<div class = "txt" id = "at">
 					 About
-					</span>
-					<div class = "headeropacity">
 					</div>
+					
 					<div class = "dropdown-content" id = "a">
 						<div class = "bio">
 							<hr4> Hi! My name's Trent and I'm... 
@@ -63,11 +111,10 @@
 				<!-- Graphic -->
 			
 				<div class = "dropdown">
-					<div class = "txt">
+					<div class = "txt" id = "gt">
 					Graphic
 					</div>
-					<div class = "headeropacity" id ="hg">
-					</div>
+					
 
 					<div class = "dropdown-content" id = "g">
 
@@ -183,12 +230,10 @@
 			
 
 				<div class = "dropdown" id ="in">
-					<div class = "txt" id = "indpadding">
+					<div class = "txt" id = "it">
 					Industrial
 					</div>
-					<div class = "headeropacity" id ="hi">
-					</div>
-				
+
 					<div class = "dropdown-content" id = "i">
 
 
@@ -309,6 +354,8 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			
 
 
 

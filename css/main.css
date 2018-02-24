@@ -23,9 +23,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;*/
 }
+#idt{
 
-
+}
+.hoc {
+	-webkit-transition:.4s;
+    opacity: .0 ; 
+}
 header{
+	-webkit-transition:1.25s;
 	position: fixed;
 	top: -2rem;
 	width: 100%;
@@ -37,6 +43,7 @@ header{
 }
 
 h1 {
+	-webkit-transition:1.25s;
 	top:25%;
 	font-weight: normal;
 	font-size: 400%;
@@ -77,14 +84,7 @@ h4 {
 	color: #70C6F9;
 	font-size: 100%;
 }
-.headeropacity{
-	display: block;
-	position: fixed;
-	width: 80%;
-	height: 10rem;
-	top: 2.5%;
-	background-color: #2A3033;
-	opacity: 0;
+#headeropacity{
 }
 
 
@@ -125,7 +125,9 @@ h4 {
 	background-color: green;
 }*/
 
-.navbar{
+#navbar{
+	-webkit-transition:1.25s;
+	opacity: 1;
 	position: absolute;
 	margin:auto;
 	width: 100%;
@@ -136,8 +138,12 @@ h4 {
 	padding-right: 10vw;*/
 	overflow-right: hidden; 
 }
+.nbo {
+	-webkit-transition:.4s;
+    opacity: .0 ; 
+}
 
-#nb2{
+.nb2{
 	position: relative;
 	top:0rem;
 	margin:auto;
@@ -169,10 +175,10 @@ h4 {
 }
 #in{
 	margin-left:0;
-}
+} 
 
-
-.txt{
+#at{
+	background-color:transparent;
 	display: block;
 	position: fixed;
 	float: left;
@@ -184,14 +190,69 @@ h4 {
     text-align: left;    
     font-weight: normal;
     color: #70C6F9;
-    opacity: 0.5;
+    overflow: visible;
+
+}
+#gt{
+	background-color:transparent;
+	display: block;
+	position: fixed;
+	float: left;
+	height: 5%;
+	width: 5%;
+	/*margin:10%;*/
+	background-color: transparent;
+	font-size: 120%;
+    text-align: left;    
+    font-weight: normal;
+    color: #70C6F9;
+    overflow: visible;
+
+}
+#it{
+	background-color:transparent;
+	display: block;
+	position: fixed;
+	float: left;
+	height: 5%;
+	width: 5%;
+	/*margin:10%;*/
+	background-color: transparent;
+	font-size: 120%;
+    text-align: left;    
+    font-weight: normal;
+    color: #70C6F9;
+    overflow: visible;
+    padding-left: 2%;
+
+}
+
+.txt{
+
+	display: block;
+	position: fixed;
+	float: left;
+	height: 5%;
+	width: 5%;
+	/*margin:10%;*/
+	background-color: transparent;
+	font-size: 120%;
+    text-align: left;    
+    font-weight: normal;
+    color: #70C6F9;
+    opacity: 0.4;
     overflow: visible;
     /*padding-right:5%;
     padding-left: 5%;*/
 
+}
 
+.txtwo{
+	-webkit-transition:.4s;
+    opacity: 0;
 
-
+    /*padding-right:5%;
+    padding-left: 5%;*/
 
 }
 
@@ -201,13 +262,14 @@ h4 {
 
 
 }
+/*
 .dropdown:hover .headeropacity{
 	-webkit-transition: .8s;
 
     opacity: .8;
     font-color: white; 
 
-}
+}*/
 
 .dropdown-content{
 	-webkit-transition: .2s;
@@ -230,17 +292,14 @@ h4 {
     opacity: 1;
     /*text-shadow: .05rem .125rem .75rem #1C1D1E, 
     			.03rem .5rem .75rem #1C1D1E, .07rem .5rem .75rem #1C1D1E;*/
-    -webkit-transition: .2s;
+
     font-size: 120%;
     color:#70C6F9;
     overflow: visible;
 
 }
 
-#indpadding{
-	padding-left: 1%;
 
-}
 
 
 #a{
