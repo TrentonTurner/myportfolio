@@ -59,7 +59,7 @@ h3 {
 	transform: translate(-50%, -120%);
 	font-weight: normal;
 	color:black;
-	font-size: 3.5vw;
+	font-size: 3vw;
 	opacity: 1 ;
 	z-index: 2;
 	/*text-shadow:  .1rem .6rem 2rem #white;*/
@@ -383,6 +383,8 @@ h4 {
 	width: 100%;
 	height: 100%;
 	z-index:1;
+	border-width: 30px;
+	border-color: white;
 	/*#70C6F9*/
 }
 
@@ -406,6 +408,7 @@ img {
 	transform: scale(1.1,1.1);*/
 	height: 60%;
 	padding-top: 12.5%;
+	opacity: 1;
 
 
     z-index: 1;
