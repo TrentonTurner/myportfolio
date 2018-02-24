@@ -78,13 +78,13 @@ h4 {
 	font-size: 100%;
 }
 .headeropacity{
-	display: none;
+	display: block;
 	position: fixed;
 	width: 80%;
 	height: 10rem;
 	top: 2.5%;
 	background-color: #2A3033;
-	opacity: 1;
+	opacity: 0;
 }
 
 
@@ -196,18 +196,21 @@ h4 {
 }
 
 .dropdown:hover .dropdown-content{
+    -webkit-transition: .2s;
     display: inline-block; 
 
 
 }
 .dropdown:hover .headeropacity{
-	display:block;
-    opacity: .5;
+	-webkit-transition: .8s;
+
+    opacity: .8;
     font-color: white; 
 
 }
 
 .dropdown-content{
+	-webkit-transition: .2s;
 	display: none;
     position: absolute;
     top:80%;
