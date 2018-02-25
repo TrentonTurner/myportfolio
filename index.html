@@ -7,7 +7,7 @@
      href="css/main.css">
      
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 			<script>
 		/*window.onscroll = function() {myFunction()};
@@ -31,7 +31,7 @@
 		}*/
 
 
-
+/*
 
 		window.onscroll = function() { nbFade();myFunction();};
 
@@ -49,11 +49,20 @@
 					document.getElementById("ah" ).style.opacity= 1 - document.documentElement.scrollTop/30;
 					document.getElementById("gh" ).style.opacity= 1 - document.documentElement.scrollTop/30;
 					document.getElementById("ih" ).style.opacity = 1 - document.documentElement.scrollTop/30;
-				
 
-		
 	
-			}
+			}*/
+			$(window).scroll(function() {
+			  var homeTop = $(window).scrollTop();
+
+			  $(".splashback").each(function() {
+			    var height = $(this).height();
+			    var offset = $(this).offset().top;
+			    var opacity = (height - homeTop + offset) / height;
+
+			    $(this).css("opacity", opacity);
+			  });
+			});
 		
 </script>
 
@@ -123,7 +132,7 @@
 
 				<!-- Graphic -->
 			
-				<div class = "dropdown">
+				<div class = "dropdown splashback">
 					<div class = "ath" id = "gh">
 				   
 						<div class = "txt" >
