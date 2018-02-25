@@ -37,7 +37,7 @@ h1 {
 	top:25%;
 	font-weight: normal;
 	font-size: 400%;
-	padding-left: 10%;
+	padding-left: 9.9%;
 	/*text-shadow: .5rem .75rem .7rem #232323;*/
 }
 
@@ -439,6 +439,7 @@ img {
 
 
 .port:hover img{
+	top:22.25%;
 	-webkit-transition: .75s;
 	/*padding-top: 7.5%;
 	height:80%;*/
