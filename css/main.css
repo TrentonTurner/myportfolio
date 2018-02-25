@@ -26,6 +26,9 @@ body {
 #idt{
 
 }
+
+
+
 .hoc {
 	-webkit-transition:.4s;
     opacity: .0 ; 
@@ -138,10 +141,7 @@ h4 {
 	padding-right: 10vw;*/
 	overflow-right: hidden; 
 }
-.nbo {
-	-webkit-transition:.4s;
-    opacity: .0 ; 
-}
+
 
 .nb2{
 	position: relative;
@@ -193,39 +193,7 @@ h4 {
     overflow: visible;
 
 }
-#gt{
-	background-color:transparent;
-	display: block;
-	position: fixed;
-	float: left;
-	height: 5%;
-	width: 5%;
-	/*margin:10%;*/
-	background-color: transparent;
-	font-size: 120%;
-    text-align: left;    
-    font-weight: normal;
-    color: #70C6F9;
-    overflow: visible;
 
-}
-#it{
-	background-color:transparent;
-	display: block;
-	position: fixed;
-	float: left;
-	height: 5%;
-	width: 5%;
-	/*margin:10%;*/
-	background-color: transparent;
-	font-size: 120%;
-    text-align: left;    
-    font-weight: normal;
-    color: #70C6F9;
-    overflow: visible;
-    padding-left: 2%;
-
-}
 
 .txt{
 
@@ -242,19 +210,27 @@ h4 {
     color: #70C6F9;
     opacity: 0.4;
     overflow: visible;
-    /*padding-right:5%;
-    padding-left: 5%;*/
+
+   
 
 }
 
-.txtwo{
-	-webkit-transition:.4s;
-    opacity: 0;
-
-    /*padding-right:5%;
-    padding-left: 5%;*/
+#ath{
+	-webkit-transition:.2s;
+	position: relative;
+	background-color: transparent;
+	display: inline-block;
+	top:0
+	left:0;
+	opacity: 1;
+	height: 2rem;
+	width: 6rem;
+	padding-right:.6rem;
 
 }
+
+
+
 
 .dropdown:hover .dropdown-content{
     -webkit-transition: .2s;
@@ -262,14 +238,7 @@ h4 {
 
 
 }
-/*
-.dropdown:hover .headeropacity{
-	-webkit-transition: .8s;
 
-    opacity: .8;
-    font-color: white; 
-
-}*/
 
 .dropdown-content{
 	-webkit-transition: .2s;
@@ -303,10 +272,13 @@ h4 {
 
 
 #a{
+	top:2rem;
+
 	background-color: transparent;
 	
 }
 #g{
+	top:2rem;
 	position: relative;
 	left: -100%;
 	height:2000%;
@@ -315,39 +287,29 @@ h4 {
 }
 
 #i{
+	top:2rem;
 	position: relative;
 	left: -200%;
 	height:2000%;
 	padding-bottom: .5%;
 	/*background-color: orange;*/
 }
-
-#hg{
-	left:0rem;
-	margin-left: 10%;
+#it{
+	margin-left: 1rem;
 }
 
-#hi{
-	left:0rem;
-	margin-left: 10%;
+#ah{
 
 }
 
+#gh{
 
-/*.bc{
-	position: relative;
-	height: 5vh;
-	width:20%;
-	display:inline-block;
-	left:0%;
-	float: left;
-	
-	float: left;
-	display: inline-block;
-	background-color: blue;
-	opacity: .8;
+}
 
-}*/
+#ih{
+
+}
+
 
 
 
@@ -363,23 +325,6 @@ h4 {
 	font-size: 120%;
 	color: #70C6F9;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

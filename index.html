@@ -8,22 +8,10 @@
      <script
   src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-<!--
-<script type = "text/javascript" >
-				$(window).scroll(function() {
-						if($(".dropdown-content").scrollBottom()<40){
-							$(".headeropacity").css({"opacity" : "1"})
-						})
-						else{
-							$(".headeropacity").css({"opacity" : "1"})
-						})
-						// body...
-				})
-  				
-			</script>-->
+
 
 			<script>
-		window.onscroll = function() {myFunction()};
+		/*window.onscroll = function() {myFunction()};
 
 		function myFunction() {
 
@@ -41,14 +29,32 @@
 		    }
 		    
 		   
-		}
+		}*/
 
-		/*$(window).scroll(function(i){
-		    var scrollVar = $(window).scrollTop();
-		    $('section#about .inner').children('h1').css({'top': .7*scrollVar });
-		    $('section#about .inner').children('h1').css({'opacity':( 10-scrollVar )/100});
-		})*/
+
+
+
+		window.onscroll = function() { nbFade(),myFunction()};
+
+			function myFunction() {
+
+
+				document.getElementById("headeropacity" ).style.opacity = 1 - document.documentElement.scrollTop/95;
+
+			}
+			
+			
+			function nbFade() {
+
+				
+					document.getElementById("ah" ).style.opacity= 1 - document.documentElement.scrollTop/30;
+					document.getElementById("gh" ).style.opacity= 1 - document.documentElement.scrollTop/30;
+					document.getElementById("ih" ).style.opacity = 1 - document.documentElement.scrollTop/30;
+				
+
 		
+	
+			}
 		
 </script>
 
@@ -89,10 +95,18 @@
 				
 				
 				<div class = "dropdown" id ="ab" >
-					<div class = "txt" id = "at">
+					<div class = "ath" id = "ah">
+				    
+					<div  class = "txt" >
 					 About
+
+
 					</div>
-					
+				</div>
+
+
+
+
 					<div class = "dropdown-content" id = "a">
 						<div class = "bio">
 							<hr4> Hi! My name's Trent and I'm... 
@@ -111,10 +125,15 @@
 				<!-- Graphic -->
 			
 				<div class = "dropdown">
-					<div class = "txt" id = "gt">
-					Graphic
-					</div>
+					<div class = "ath" id = "gh">
+				   
+						<div class = "txt" >
+						Graphic
+
+						</div>
+					 </div>
 					
+
 
 					<div class = "dropdown-content" id = "g">
 
@@ -230,9 +249,13 @@
 			
 
 				<div class = "dropdown" id ="in">
+					<div class = "ath" id = "ih">
 					<div class = "txt" id = "it">
 					Industrial
 					</div>
+					</div>
+					
+
 
 					<div class = "dropdown-content" id = "i">
 
