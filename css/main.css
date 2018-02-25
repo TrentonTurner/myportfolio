@@ -11,18 +11,6 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
-.bg {
-
-
-	position: fixed;
-    /* The image used */
-    opacity: .6;
-
-    /* Center and scale the image nicely 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
 
 
 .hoc {
@@ -111,6 +99,7 @@ h3 {
 	top:12rem;
 	height: 2rem;
 	background: transparent;
+
 	/*padding-left: 10vw;
 	padding-right: 10vw;*/
 }
