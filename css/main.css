@@ -209,7 +209,7 @@ h3 {
 	display: none;
     position: absolute;
     top:80%;
-    background-color: pink;
+    background-color: transparent;
     opacity: 1;
     width: 80vw;
     height:750%;
