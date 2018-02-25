@@ -58,9 +58,13 @@
 			  $(".splashback").each(function() {
 			    var height = $(this).height();
 			    var offset = $(this).offset().top;
-			    var opacity = (height - homeTop + offset) / height;
+			    var opacity = (((height) - (homeTop+150) + offset) / height);
+			    var opacity2 = (((height) - (homeTop+190) + offset) / height);
 
-			    $(this).css("opacity", opacity);
+			    $("#headeropacity").css("opacity", opacity);
+			    $("#ah").css("opacity", opacity2);
+			    $("#gh").css("opacity", opacity2);
+			    $("#ih").css("opacity", opacity2);
 			  });
 			});
 		
