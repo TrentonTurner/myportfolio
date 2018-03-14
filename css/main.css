@@ -314,6 +314,9 @@ h3 {
 /*---- Graphic ----*/
 
 
+
+
+
 .port{
 	position: relative;
 	width:49.75%;
@@ -328,6 +331,22 @@ h3 {
 	overflow: hidden;
 
 
+}
+#b2g{
+	margin-left: 0.5%;
+	float: right;
+	background-color: #F1F1FF;
+}
+
+#din{
+	margin-left: 0.5%;
+	float: right;
+	background-color: #92E5FF;
+}
+
+#agro{
+
+	background-color: white;
 }
 
 /*.port.pl{
@@ -412,7 +431,16 @@ img {
 
     z-index: 1;
 }
+#agpic{
+	top:2.25%;
+	height:100%;
+}
 
+
+#b2gp{
+	top:3.25%;
+	height:100%;
+}
 
 /*
 #simple2{
@@ -451,6 +479,23 @@ img {
 #bottom{
 	padding-bottom: 0%;
 }
+
+
+
+
+
+/*---- Graphic ----*/
+
+
+.b2g{
+	margin-left: 0.5%;
+	float: right;
+	background-color: pink;
+}
+
+
+
+
 
 
 
