@@ -457,14 +457,14 @@ img {
 
 
 .port:hover .simple{
-	opacity: .8;
+	opacity: 0;
 	-webkit-transition: .75s;
 
 }
 
 .port:hover .kch{
 	-webkit-transition: .5s;
-	opacity: 1;
+	opacity: 0;
 
 }
 
